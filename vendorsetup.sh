@@ -1,6 +1,6 @@
 #common trees
 git clone https://github.com/jignesh2023/device_xiaomi_mt6833-common-fix.git -b 15 device/xiaomi/mt6833-common
-# Kernel 
+# Kernel
 git clone https://github.com/jignesh2320/kernel_xiaomi_mt6833-fix.git -b fifteen kernel/Xiaomi/mt6833
 
 # Device Vendor Tree
@@ -13,3 +13,7 @@ rm -rf hardware/mediatek && git clone https://github.com/LineageOS/android_hardw
 
 # Hardware Xiaomi
 rm -rf hardware/xiaomi && git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
+
+# Setup Neutron Clang
+mkdir prebuilts/clang/host/linux-x86/clang-neutron; cd prebuilts/clang/host/linux-x86/clang-neutron;
+curl -LO "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman";
